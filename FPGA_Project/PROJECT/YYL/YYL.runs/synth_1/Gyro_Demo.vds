@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 29 16:56:13 2020
+# Process ID: 12912
+# Current directory: C:/Users/86157/Desktop/2.IoT/FPGA_Project/PROJECT/YYL/YYL.runs/synth_1
+# Command line: vivado.exe -log Gyro_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Gyro_Demo.tcl
+# Log file: C:/Users/86157/Desktop/2.IoT/FPGA_Project/PROJECT/YYL/YYL.runs/synth_1/Gyro_Demo.vds
+# Journal file: C:/Users/86157/Desktop/2.IoT/FPGA_Project/PROJECT/YYL/YYL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Gyro_Demo.tcl -notrace
+Command: synth_design -top Gyro_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2652 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.465 ; gain = 98.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Gyro_Demo' [C:/Users/86157/Desktop/2.IoT/FPGA_Project/rtl/Gyro_Demo.v:23]
+ERROR: [Synth 8-439] module 'clk_wiz_0' not found [C:/Users/86157/Desktop/2.IoT/FPGA_Project/rtl/Gyro_Demo.v:100]
+ERROR: [Synth 8-6156] failed synthesizing module 'Gyro_Demo' [C:/Users/86157/Desktop/2.IoT/FPGA_Project/rtl/Gyro_Demo.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 486.453 ; gain = 154.523
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 16:56:28 2020...
